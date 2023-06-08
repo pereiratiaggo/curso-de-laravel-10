@@ -11,16 +11,15 @@
 </head>
 
 <body>
+    <section class="container px-4 mx-auto py-4">
 
-    <head>
         @yield('header')
-    </head>
-    <div class="content">
-        @yield('content')
-    </div>
-    <footer>
-        #default footer
-    </footer>
+
+        <div class="content">
+            <x-messages />
+            @yield('content')
+        </div>
+    </section>
 </body>
 
 </html>
